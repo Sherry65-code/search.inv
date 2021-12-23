@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/418/418412.png" type="image/png">
+<style>
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-block-start: 10%;
+    font-style: italic;
+    color: aliceblue;
+}
+body{
+    background-image: url('https://wallpapertag.com/wallpaper/full/8/c/d/132231-4k-resolution-wallpaper-3840x2160-large-resolution.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+input{
+    background: linear-gradient(to right , rgb(0, 23, 128) , rgb(255, 51, 85));
+    /* background-color: rgb(14, 16, 36); */
+    border: none;
+    border-radius: 4px;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+    padding: 5px;
+    color: rgb(178, 179, 180);
+    top: 50%;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+}
+input:hover{
+    box-shadow: 0px 0px 50px 0px black;
+}
+::selection{
+    background-color: beige;
+    color: rgb(31, 31, 31);
+}
+::-webkit-input-placeholder{
+    font-style: italic;
+    font-weight: bold;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invento Searcher</title>
+</head>
+<body>
+    <h1>Searcher by Invento</h1>
+<input placeholder="Powered by Bing" type="text" name="" id="search" autofocus="true">
+    <script>
+document.getElementById('search').addEventListener('keydown' , searchh , false);
+function searchh(key)
+{
+    if (key.keyCode == "13")
+    {
+        var searchbar = document.getElementById('search').value;
+window.open("https://www.bing.com/search?q="+searchbar+"&cvid=9fc3f1309fa54dd19f9927703c8d0282&aqs=edge..69i57j0l5j69i61j69i60l2.2528j0j1&pglt=675&FORM=ANNTA1&PC=EDGEDB" , "_self");
+
+    }
+}
+</script>
+</body>
+</html>
